@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота 1</title>
+
+</head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column; 
+        }
+
+        h2 {
+            text-align: center;
+            margin: 0 0 10px 0;
+        }
+
+        input {
+            padding: 6px 8px;
+            font-size: 14px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        .back-link {
+            color: #555;
+            text-decoration: none;
+        }
+    </style>
+<body>
+
+    <div class="container">
+        <nav>
+            <a href="labs.html" class="back-link">Назад до списку лабораторних робіт</a>
+        </nav>
+        <h2>Форма реєстрації</h2>
+
+        <form action="https://webhook.site/85e44229-9e35-45b2-8d14-82dc45f07e9d" method="post">
+
+            <div class="registr">
+                <label for="first-name">Ім'я:</label>
+                <input type="text" id="first-name" name="first_name" placeholder="Введіть ім'я" required>
+            </div>
+
+            <div class="registr">
+                <label for="last-name">Прізвище:</label>
+                <input type="text" id="last-name" name="last_name" placeholder="Введіть прізвище" required>
+            </div>
+
+            <div class="registr">
+                <label for="email">Електронна пошта:</label>
+                <input type="email" id="email" name="email" placeholder="Введіть пошту" required>
+            </div>
+
+            <div class="registr">
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" placeholder="Введіть пароль" required>
+            </div>
+
+            <div class="registr">
+                <label for="confirm-password">Підтвердження паролю:</label>
+                <input type="password" id="confirm-password" name="confirm_password" placeholder="Підтвердіть пароль" required>
+            </div>
+
+            <div class="registr">
+                <label for="birth-date">Дата народження:</label>
+                <input type="date" id="birth-date" name="birth_date">
+            </div>
+
+            <div class="registr">
+                <label for="gender">Стать:</label>
+                <select id="gender" name="gender">
+                    <option value="">Виберіть стать</option>
+                    <option value="male">Чоловіча</option>
+                    <option value="female">Жіноча</option>
+                    <option value="other">Інша</option>
+                </select>
+            </div>
+
+            <div class="registr">
+                <input type="submit" value="Зареєструватися">
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
